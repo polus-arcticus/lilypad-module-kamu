@@ -12,10 +12,10 @@
       },
       "Docker": {
         "Entrypoint": [
-          "/usr/games/cowsay",
+          "echo",
           {{if .Message}}{{.Message}}{{else}}"Pass me an input called Message, like lilypad run cowsay:v0.0.2 -i Message=moo"{{end}}
         ],
-        "Image": "ghcr.io/kamu-data/kamu-base:latest-with-data@sha256:62064666c156709239d0add1dd3b0c183fc9a4e1380661d395127a82264764a4"
+        "Image": "ghcr.io/polus-arcticus/kamu-bacalhau@sha256:a872c72dbc65cad38b9efb6c4fbd58f3bca41285a5b7486258ad6d068a6a8d71"
       },
       "Engine": "Docker",
       "Network": {
