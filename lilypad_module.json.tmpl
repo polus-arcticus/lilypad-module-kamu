@@ -14,7 +14,7 @@
         "Entrypoint": [
           "/app/start.sh"
         ],
-        "Image": "ghcr.io/polus-arcticus/kamu-bacalhau@sha256:7f3af6875344b46c3b7107ff5c91857c02a8b90c4afc232d691584daba5036f1"
+        "Image": "ghcr.io/polus-arcticus/kamu-bacalhau@sha256:c186b805815b7234c2c84971fda9ffac1f97c60a9aec2963c4436026cf9df9b2"
       },
       "Engine": "Docker",
       "Network": {
@@ -28,6 +28,13 @@
       },
       "Timeout": 1800,
       "Verifier": "Noop"
+      "outputs": [
+        {
+          "Name": "outputs",
+          "StorageSource": "IPFS",
+          "path": "/outputs"
+        }
+      ]
     }
   }
 }
