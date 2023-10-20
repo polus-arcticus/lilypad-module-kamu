@@ -12,10 +12,11 @@
       },
       "Docker": {
         "Entrypoint": [
-          "echo",
-          {{if .Message}}{{.Message}}{{else}}"Pass me an input called Message, like lilypad run cowsay:v0.0.2 -i Message=moo"{{end}}
+          "kamu",
+          "pull",
+          "./test/ca.bankofcanada.exchange-rates.daily.yaml" 
         ],
-        "Image": "ghcr.io/polus-arcticus/kamu-bacalhau@sha256:a872c72dbc65cad38b9efb6c4fbd58f3bca41285a5b7486258ad6d068a6a8d71"
+        "Image": "ghcr.io/polus-arcticus/kamu-bacalhau@sha256:7f3af6875344b46c3b7107ff5c91857c02a8b90c4afc232d691584daba5036f1"
       },
       "Engine": "Docker",
       "Network": {
